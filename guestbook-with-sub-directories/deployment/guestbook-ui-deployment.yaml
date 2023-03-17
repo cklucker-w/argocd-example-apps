@@ -3,7 +3,8 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
-  replicas: 2
+  # section 86 - diffing customization, we set replicas to be ignored 
+  replicas: 3
   revisionHistoryLimit: 3
   selector:
     matchLabels:
